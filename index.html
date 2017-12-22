@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- JS -->
+    <script src="script.js"></script>
+</head>
+<body>
+<h1>Form</h1>
+<form name="contact-form" class="box" id="contact-form">
+    <div class="form-field">
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name">
+        <span class="error"></span>
+    </div>
+    <div class="form-field">
+        <label for="email">Email: </label>
+        <input type="text" name="email" id="email">
+        <span class="error"></span>
+    </div>
+    <div class="form-field">
+        <label for="subject">Subject: </label>
+        <input type="text" name="subject" id="subject">
+        <span class="error"></span>
+    </div>
+    <div class="form-field">
+        <label for="message">Message: </label>
+        <textarea name="message" id="message" cols="40" rows="7"></textarea>
+        <span class="error"></span>
+    </div>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    <span id="error"></span>
+</form>
+<div id="messages"></div>
+</body>
+</html>
